@@ -1,4 +1,5 @@
 import { Variants } from 'framer-motion';
+import { TransitionDefinition } from 'framer-motion/types/types';
 
 export const droidVariants: Variants = {
   offscreen: {
@@ -10,9 +11,9 @@ export const droidVariants: Variants = {
     x: 0,
 
     transition: {
-      type: 'spring',
-      stiffness: 70,
       delay: 1,
+      type: 'spring' as unknown as TransitionDefinition,
+      stiffness: 70 as TransitionDefinition,
       bounce: 0.4,
       duration: 1.1,
       ease: 'easeOut',
