@@ -10,7 +10,7 @@ interface MenuItemProps {
   text: string;
 }
 
-const MenuItem = React.forwardRef(({ href, text }: MenuItemProps, ref) => {
+const MenuItem = React.forwardRef(({ href, text }: MenuItemProps, ref: any) => {
   const { theme, setTheme } = useTheme();
 
   return (
