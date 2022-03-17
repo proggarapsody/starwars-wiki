@@ -24,7 +24,7 @@ const NavBar = () => {
 
   const menuVariants = {
     closed: {
-      x: -150,
+      x: -200,
       transition: {
         type: 'tween',
         duration: 0.05,

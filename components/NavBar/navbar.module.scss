@@ -92,3 +92,21 @@
     transition: color 0.2s linear;
   }
 }
+
+//Adaptive-----------
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .navbarCloseButton {
+    top: 30px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+}
