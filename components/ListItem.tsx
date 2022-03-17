@@ -4,7 +4,7 @@ import styles from '../styles/components/list-item.module.scss';
 import { staggerChildVars } from './../utils/animation.variants';
 import { motion } from 'framer-motion';
 
-const ListItem: React.FC<any> = React.forwardRef(
+const ListItem = React.forwardRef(
   (
     {
       children,
