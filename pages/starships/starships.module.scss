@@ -1,0 +1,47 @@
+.starfighterImg {
+  display: inline-flex;
+  position: absolute;
+  right: 23%;
+
+  max-width: 92px;
+}
+.milleniumImg {
+  display: inline-flex;
+  position: absolute;
+  left: 10%;
+  top: 40px;
+}
+
+//Adaptive-----------
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .milleniumImg {
+    width: 180px;
+    top: 230px;
+    left: 5%;
+  }
+  .starfighterImg {
+    width: 80px;
+    top: 80px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .milleniumImg {
+    width: 150px;
+    top: 230px;
+    left: 3%;
+  }
+  .starfighterImg {
+    width: 70px;
+    top: 80px;
+    right: 2%;
+  }
+}

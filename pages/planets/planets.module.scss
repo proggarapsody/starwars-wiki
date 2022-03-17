@@ -1,0 +1,109 @@
+.tatooineImg {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  & svg {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.deathStarImg {
+  position: absolute;
+  right: 70px;
+  top: 10px;
+  & svg {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+//Adaptive-----------
+
+@media (max-width: 1200px) {
+  .tatooineImg {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    & svg {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .deathStarImg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    & svg {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .tatooineImg {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    & svg {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .deathStarImg {
+    position: absolute;
+    right: 70px;
+    top: 30px;
+    & svg {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tatooineImg {
+    position: absolute;
+    left: 30px;
+    top: 80px;
+    & svg {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .deathStarImg {
+    position: absolute;
+    right: 70px;
+    top: 80px;
+    & svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .tatooineImg {
+    position: absolute;
+    left: 0;
+    top: 110px;
+    & svg {
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  .deathStarImg {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    & svg {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}

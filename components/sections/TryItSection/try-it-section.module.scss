@@ -1,0 +1,163 @@
+.tryIt {
+  height: 100vh;
+  margin-top: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.tryItHeader {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  & .tryItHeaderIcon {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 30px;
+    min-height: 0 !important;
+    width: auto;
+  }
+}
+.tryItLabel {
+  font-size: 64px;
+
+  width: 450px;
+}
+
+.tryItButton {
+  all: unset;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 50px;
+  border-radius: 30px;
+  transition: background-color 0.2s linear;
+  z-index: 20;
+  &:hover {
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    background-color: rgba(16, 16, 16, 0.03);
+  }
+}
+
+.tryItIcon {
+  height: 100px;
+  width: 100px;
+}
+
+.tryItText {
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--accent-color);
+  margin-left: 20px;
+}
+
+//Adaptive-----------
+
+@media (max-width: 1200px) {
+  .tryItHeader {
+    margin-bottom: 10px;
+  }
+  .tryItLabel {
+    font-size: 42px;
+    width: 320px;
+    min-width: 250px;
+  }
+
+  .mainContainer {
+    width: calc(100% - 25%);
+
+    margin: auto;
+    height: 100%;
+  }
+
+  .tryItButton {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tryItHeader {
+    margin-bottom: 10px;
+  }
+  .tryItLabel {
+    font-size: 38px;
+    width: 300px;
+    min-width: 250px;
+  }
+
+  .tryItHeaderIcon {
+    top: 60px;
+    height: 30%;
+    max-width: 50% !important;
+    width: 70% !important;
+  }
+
+  .tryItText {
+    font-size: 30px;
+  }
+  .tryItButton {
+    scale: 0.8;
+  }
+  .tryItIcon {
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .tryIt {
+    height: 100% !important;
+    padding-top: 100px;
+    overflow: visible;
+  }
+  .tryItHeader {
+    margin-bottom: 10px;
+  }
+  .tryItLabel {
+    font-size: 26px;
+    width: 50%;
+    min-width: none;
+  }
+
+  .tryItHeaderIcon {
+    max-width: 40% !important;
+    width: 70% !important;
+  }
+
+  .tryItText {
+    font-size: 30px;
+  }
+  .tryItButton {
+    scale: 0.8;
+  }
+  .tryItIcon {
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 576px) {
+  .tryIt {
+    height: 100% !important;
+    padding-top: 100px;
+    overflow: visible;
+  }
+  .tryItHeader {
+    margin-bottom: 10px;
+  }
+  .tryItLabel {
+    font-size: 22px;
+    width: 50%;
+    min-width: 0;
+  }
+  .tryItHeaderIcon {
+    max-width: 40% !important;
+  }
+
+  .tryItText {
+    font-size: 30px;
+  }
+  .tryItButton {
+    margin-left: 0 !important;
+  }
+}

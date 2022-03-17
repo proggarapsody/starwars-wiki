@@ -1,0 +1,239 @@
+.examples {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.examplesLabel {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: show;
+  & h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  & svg {
+    position: absolute;
+
+    z-index: 0;
+    top: -62px;
+    left: -120px;
+
+    overflow: visible;
+  }
+}
+
+.examplesLabelIcon {
+}
+
+.example {
+  width: 750px !important;
+  height: auto !important;
+  position: relative;
+}
+.exampleImage {
+  width: 330px;
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  border: 1px solid var(--additional-color);
+}
+.exampleLabel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  margin-bottom: 90px;
+  padding: 0;
+  margin: 0;
+}
+
+.exampleText {
+  font-size: 32px;
+
+  width: 45%;
+}
+
+.examplesBody {
+  width: 100%;
+  margin: auto;
+  background-color: var(--secondary-color);
+  padding: 60px 50px;
+  margin-top: 130px;
+
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: var(--example-text-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.navigationButton {
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+
+  transition: all 0.1s;
+  &:hover {
+    filter: drop-shadow(0px 0px 4px #ffc107);
+    transition: all 0.1s;
+    cursor: pointer;
+    scale: 1.04;
+    transform: translateY(calc(0.4px));
+  }
+}
+.navigationButtonLeft {
+  left: 30px;
+}
+.examplesSwiper {
+  height: auto;
+  width: 750px;
+
+  margin: auto;
+}
+
+//Adaptive-----------
+
+@media (max-width: 1200px) {
+  .examples {
+    margin-top: 100px;
+  }
+
+  .exampleImage {
+    width: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+  }
+
+  .exampleLabel {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .exampleText {
+    font-size: 28px;
+  }
+  .examplesSwiper {
+    height: auto;
+    width: 500px;
+  }
+
+  .examplesBody {
+    padding: 30px 5px;
+    margin-top: 130px;
+  }
+
+  .example {
+    width: 500px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .examples {
+    margin-top: 80px;
+  }
+
+  .examplesLabel {
+    & h1 {
+      font-size: 40px;
+    }
+
+    & svg {
+      width: 60px;
+      left: 0;
+    }
+  }
+
+  .exampleImage {
+    width: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 55%;
+  }
+
+  .exampleLabel {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .exampleText {
+    font-size: 18px;
+    max-width: 40%;
+  }
+
+  .examplesSwiper {
+    height: auto;
+    width: 320px;
+  }
+
+  .examplesBody {
+    padding: 30px 5px;
+    margin-top: 130px;
+  }
+
+  .example {
+    width: 320px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .examples {
+    margin-top: 80px;
+  }
+
+  .examplesLabel {
+    & h1 {
+      font-size: 40px;
+    }
+
+    & svg {
+      width: 60px;
+      left: 0;
+    }
+  }
+
+  .exampleImage {
+    display: none;
+  }
+
+  .exampleLabel {
+    font-size: 26px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .exampleText {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    width: 150px;
+    max-width: 100%;
+  }
+
+  .examplesSwiper {
+    height: auto;
+    width: 160px;
+  }
+
+  .examplesBody {
+    padding: 30px 5px;
+    margin-top: 130px;
+  }
+
+  .example {
+    width: 160px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navigationButton {
+    display: none;
+  }
+}

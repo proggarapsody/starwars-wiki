@@ -1,0 +1,59 @@
+.menu {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.stormTrooper {
+  width: 609px;
+  height: 544px;
+}
+
+.menuItems {
+  display: inline-flex;
+  flex-direction: column;
+  flex-grow: 0;
+  margin-left: 133px;
+  gap: 50px;
+}
+
+.menuImage {
+  width: 620px;
+}
+
+//Adaptive-----------
+
+@media (max-width: 1200px) {
+  .menuImage {
+    width: 100%;
+
+    margin-right: auto;
+    & svg {
+      width: 120%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .menuItems {
+    gap: 30px;
+  }
+  .menuImage {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menuImage {
+    display: none;
+  }
+  .menuItems {
+    margin-left: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+}

@@ -1,0 +1,87 @@
+.atatImg {
+  position: absolute;
+  right: 15%;
+  top: 377px;
+  & svg {
+    width: 151px;
+    height: 124px;
+  }
+}
+
+.atatMiniImg {
+  position: absolute;
+
+  left: 20%;
+  top: 500px;
+  & svg {
+    width: 86px;
+    height: 121px;
+  }
+}
+
+//Adaptive-----------
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .atatImg {
+    position: absolute;
+    right: 120px;
+    top: 395px;
+    & svg {
+      width: 131px;
+      height: 104px;
+    }
+  }
+
+  .atatMiniImg {
+    position: absolute;
+
+    left: 20%;
+    top: 522px;
+    & svg {
+      width: 66px;
+      height: 101px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .atatImg {
+    position: absolute;
+
+    top: 425px;
+    & svg {
+      width: 101px;
+      height: 74px;
+    }
+  }
+
+  .atatMiniImg {
+    position: absolute;
+
+    left: 20%;
+    top: 560px;
+    & svg {
+      width: 36px;
+      height: 71px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .atatImg {
+    position: absolute;
+    right: 20%;
+    top: 425px;
+    & svg {
+      width: 101px;
+      height: 74px;
+    }
+  }
+
+  .atatMiniImg {
+    display: none;
+  }
+}

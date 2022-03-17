@@ -1,0 +1,76 @@
+.menuItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  cursor: pointer;
+  & svg {
+    transition: transform 0.3s ease-in;
+    height: 70px;
+    width: 70px;
+  }
+  & p {
+    transition: transform 0.3s ease-in;
+    margin: 0;
+    padding: 0;
+  }
+  &:hover {
+    & svg {
+      transform: rotate(450deg);
+      transition: transform 0.3s ease-in;
+    }
+    & p {
+      transform: translateX(10px);
+      transition: transform 0.3s ease-in;
+    }
+  }
+}
+
+.menuItemText {
+  font-size: 40px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .menuItem {
+    gap: 10;
+    & svg {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .menuItemText {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menuItem {
+    gap: 10;
+    & svg {
+      height: 50px;
+      width: 50px;
+    }
+    margin: auto !important;
+  }
+
+  .menuItemText {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menuItem {
+    gap: 5;
+    & svg {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .menuItemText {
+    font-size: 30px;
+  }
+}
