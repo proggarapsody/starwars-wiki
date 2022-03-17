@@ -6,7 +6,7 @@ import '../styles/globals.scss';
 
 export default function App({ Component, pageProps }: { Component: any; pageProps: any }) {
   return (
-    <ThemeProvider enableSystem={true}>
+    <ThemeProvider enableSystem={true} defaultTheme="dark">
       <Component {...pageProps} />
     </ThemeProvider>
   );
