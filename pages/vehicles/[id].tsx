@@ -9,6 +9,8 @@ const Vehicle = ({ entity }: { entity: vehicleDto }) => {
     <MainLayout>
       <Entity
         name={entity.name}
+        url={entity.url}
+        type={'vehicles'}
         description={[
           `Crew: ${entity.crew}`,
           `Lenght: ${entity.length}`,

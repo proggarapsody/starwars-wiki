@@ -9,21 +9,30 @@ import {
   creditsVars,
 } from '../../utils/animation.variants';
 import WithLoading from '../../hoc/WithLoading';
+import { getIdFromUrl } from './../../utils/shared';
 
 const Entity = ({
   name,
   description,
   credits,
   setLoading,
+  url,
+  type,
 }: {
   name: string;
   description: Array<any>;
   credits?: string;
   setLoading: CallableFunction;
+  url: any;
+  type: string;
 }) => {
   useEffect(() => {
     setLoading(false);
+
+    console.log();
   }, []);
+  const text = `./../../public/images/${type}/${getIdFromUrl(url)}.jpg`;
+  const image = import(text);
 
   return (
     <motion.div
@@ -34,7 +43,7 @@ const Entity = ({
     >
       <motion.div className={styles.image} variants={staggerChildVars}>
         <Image
-          src={`https://www.google.com/search?q=${name}&source=lnms&tbm=isch`}
+          src={image.toString()}
           alt="image"
           height={500}
           width={500}
@@ -68,15 +77,3 @@ const Entity = ({
 };
 
 export default WithLoading(Entity);
-
-export async function getStaticProps({ query }: { query: any }) {
-  const page = query?.name || 1;
-
-  const res = await fetch(`https://www.google.com/search?q=${name}&source=lnms&tbm=isch`);
-
-  const entities = await res.json();
-
-  return {
-    props: { entitiesData: entities, page }, // will be passed to the page component as props
-  };
-}

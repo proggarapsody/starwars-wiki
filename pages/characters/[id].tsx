@@ -9,6 +9,8 @@ const Character = ({ entity }: { entity: peopleDto }) => {
     <MainLayout>
       <Entity
         name={entity.name}
+        url={entity.url}
+        type={"characters"}
         description={[
           `Birth year: ${entity.birth_year}`,
           `Eye color: ${entity.eye_color}`,
@@ -29,7 +31,6 @@ export async function getServerSideProps({ params }: { params: any }) {
   const res = await fetch(`${swapiUrl}/${swapiUrls.CHARACTERS}/${params.id}/`);
 
   const entity = await res.json();
-  console.log(entity);
 
   return {
     props: { entity }, // will be passed to the page component as props

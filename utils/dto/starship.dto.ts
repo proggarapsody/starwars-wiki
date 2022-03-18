@@ -13,4 +13,5 @@ export default interface starshipDto {
   passengers: string;
   pilots: Array<string>;
   starship_class: string;
+  url: string;
 }

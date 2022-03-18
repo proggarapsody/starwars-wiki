@@ -11,6 +11,8 @@ const Starship = ({ entity }: { entity: starshipDto }) => {
     <MainLayout>
       <Entity
         name={entity.name}
+        url={entity.url}
+        type={"starships"}
         description={[
           `Crew: ${entity.crew}`,
           `Lenght: ${entity.length}`,

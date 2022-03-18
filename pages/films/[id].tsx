@@ -11,6 +11,8 @@ const Film = ({ entity }: { entity: filmDto }) => {
       <Entity
         name={entity.title}
         credits={`${entity.opening_crawl}`}
+        url={entity.url}
+        type={"films"}
         description={[
           `Director: ${entity.director}`,
           `№ episode: ${entity.episode_id}`,

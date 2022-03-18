@@ -11,6 +11,8 @@ const Planet = ({ entity }: { entity: planetDto }) => {
     <MainLayout>
       <Entity
         name={entity.name}
+        url={entity.url}
+        type={"planets"}
         description={[
           `Population: ${entity.population}`,
           `Terrain: ${entity.terrain}`,
