@@ -104,6 +104,7 @@ const ListItems = ({
           variants={staggerContainerVars}
           initial="hidden"
           animate="show"
+
         >
           {entities?.map((entity: any, index) => {
             return (

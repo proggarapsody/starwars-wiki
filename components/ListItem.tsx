@@ -16,9 +16,11 @@ const ListItem = React.forwardRef(
     ref: any
   ) => {
     return (
-      <motion.div className={styles.listItem} variants={staggerChildVars} ref={ref}>
-        <Link href={href}>{children}</Link>
-      </motion.div>
+      <Link href={href}>
+        <motion.div className={styles.listItem} variants={staggerChildVars} ref={ref}>
+          {children}
+        </motion.div>
+      </Link>
     );
   }
 );

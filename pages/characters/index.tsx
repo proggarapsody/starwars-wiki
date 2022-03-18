@@ -60,6 +60,9 @@ const Characters = ({
             whileHover={{
               scale: 1.2,
             }}
+            whileDrag={{
+              scale: 1.2,
+            }}
           >
             <MIcon name="darthvader-color" />
           </motion.div>
@@ -75,6 +78,9 @@ const Characters = ({
             dragConstraints={constraintsRef}
             variants={staggerChildVars}
             whileHover={{
+              scale: 1.2,
+            }}
+            whileDrag={{
               scale: 1.2,
             }}
           >

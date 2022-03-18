@@ -28,8 +28,6 @@ const Entity = ({
 }) => {
   useEffect(() => {
     setLoading(false);
-
-    console.log();
   }, []);
   const text = `./../../public/images/${type}/${getIdFromUrl(url)}.jpg`;
   const image = import(text);

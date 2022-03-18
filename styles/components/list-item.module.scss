@@ -11,6 +11,7 @@
   padding: 5px 0;
   font-size: 28px;
   word-wrap: nowrap;
+  cursor: pointer;
   &:hover {
     width: 90%;
     transition: box-shadow 0.1s ease-out, width 0.2s ease-out;
