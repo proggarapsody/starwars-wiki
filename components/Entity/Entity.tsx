@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './entity.module.scss';
 import Preloader from '../Preloader';
 import { motion } from 'framer-motion';
@@ -23,14 +23,15 @@ const Entity = ({
   description: Array<any>;
   credits?: string;
   setLoading: CallableFunction;
-  url: any;
+  url: string;
   type: string;
 }) => {
   useEffect(() => {
     setLoading(false);
+    console.log(text);
   }, []);
-  const text = `./../../public/images/${type}/${getIdFromUrl(url)}.jpg`;
-  const image = import(text);
+
+  const text = `/images/${type}/${getIdFromUrl(url)}.jpg`;
 
   return (
     <motion.div
@@ -40,13 +41,7 @@ const Entity = ({
       animate="show"
     >
       <motion.div className={styles.image} variants={staggerChildVars}>
-        <Image
-          src={image.toString()}
-          alt="image"
-          height={500}
-          width={500}
-          loader={() => './Preloader'}
-        />
+        <Image src={text} alt="image" layout='fill' />
       </motion.div>
       <motion.h1 className={styles.name} variants={staggerChildVars}>
         {name}

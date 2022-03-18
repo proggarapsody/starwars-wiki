@@ -1,5 +1,8 @@
-export const getIdFromUrl = function (value: any) {
+export const getIdFromUrl = function (value: string) {
   let id = value.match(/([0-9])+/g);
-  id = id[0];
-  return id;
+  if (id) {
+    return id[0].toString();
+  }
+
+  return null;
 };
