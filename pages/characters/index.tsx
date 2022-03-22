@@ -13,7 +13,7 @@ import ReactPaginate from 'react-paginate';
 import stylesPagination from '../../styles/components/pagination.module.scss';
 import ListItem from '../../components/ListItem';
 import ListItems from '../../components/ListItems';
-import Icon, { MIcon } from '../../components/icons/Icon';
+
 import { motion } from 'framer-motion';
 
 import {
@@ -23,6 +23,7 @@ import {
 } from './../../utils/animation.variants';
 import { swapiUrl, swapiUrls } from './../../utils/urls';
 import WithLoading from '../../hoc/WithLoading';
+import { MIcon } from './../../components/icons/Icon';
 
 const Characters = ({
   entitiesData,
@@ -41,6 +42,10 @@ const Characters = ({
   useEffect(() => {
     setLoading(false);
   }, []);
+  const lightsaberTurn = (e: any) => {
+    e.target.classList.add('turnon');
+    console.log(e);
+  };
 
   return (
     <MainLayout>
@@ -64,7 +69,7 @@ const Characters = ({
               scale: 1.2,
             }}
           >
-            <MIcon name="darthvader-color" />
+            <MIcon name="darthvader-color" onClick={lightsaberTurn} />
           </motion.div>
           <motion.h1
             className={theme == 'dark' ? styles.darkTitle : styles.title}

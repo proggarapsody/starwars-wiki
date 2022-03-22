@@ -28,6 +28,7 @@ const Entity = ({
 }) => {
   useEffect(() => {
     setLoading(false);
+
     console.log(text);
   }, []);
 
@@ -41,7 +42,15 @@ const Entity = ({
       animate="show"
     >
       <motion.div className={styles.image} variants={staggerChildVars}>
-        <Image src={text} alt="image" layout='fill' />
+        <Image
+          src={text}
+          alt="image"
+          width="60%"
+          height="60%"
+          layout="responsive"
+          objectFit="cover"
+          className={styles.picture}
+        />
       </motion.div>
       <motion.h1 className={styles.name} variants={staggerChildVars}>
         {name}
