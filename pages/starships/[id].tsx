@@ -12,14 +12,13 @@ const Starship = ({ entity }: { entity: starshipDto }) => {
       <Entity
         name={entity.name}
         url={entity.url}
-        type={"starships"}
+        type={'starships'}
         description={[
           `Crew: ${entity.crew}`,
           `Lenght: ${entity.length}`,
           `Cost: ${entity.cost_in_credits}`,
           `Model: ${entity.model}`,
           `Passengers: ${entity.passengers}`,
-          `Pilots: ${entity.pilots}`,
           `Max atmosphering speed: ${entity.max_atmosphering_speed}`,
           `Hyperdrive rating: ${entity.hyperdrive_rating}`,
           `Consumables: ${entity.consumables}`,
