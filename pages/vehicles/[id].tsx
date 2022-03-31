@@ -17,7 +17,7 @@ const Vehicle = ({ entity }: { entity: vehicleDto }) => {
           `Cost: ${entity.cost_in_credits}`,
           `Model: ${entity.model}`,
           `Passengers: ${entity.passengers}`,
-          `Pilots: ${entity.pilots}`,
+          `Pilots: ${entity.pilots}`, 
           `Max atmosphering speed: ${entity.max_atmosphering_speed}`,
           `Manufacturer: ${entity.manufacturer}`,
           `Class: ${entity.vehicle_class}`,

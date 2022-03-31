@@ -55,16 +55,12 @@
     margin: auto;
   }
   & li {
-    
   }
 }
 
 //Adaptive-----------
 
 @media (max-width: 1200px) {
-  .container {
-    width: 100%;
-  }
 }
 
 @media (max-width: 992px) {
@@ -82,5 +78,8 @@
   }
   .title {
     font-size: 60px;
+  }
+  .entity_description {
+    max-width: 270px;
   }
 }
